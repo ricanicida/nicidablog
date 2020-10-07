@@ -1,9 +1,35 @@
----
-layout: default
----
-<ul>
-    <header><img src="{{ '/assets/images/ricardo.jpeg' | relative_url }}"></header>
-    {% for post in site.posts %}
-    <li><a href="{{ post.url | relative_url }}">{{post.title}}</a></li>
-    {% endfor %}
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicida Blog</title>
+    <link rel="stylesheet" href="{{ 'assets/css/styles.css' | relative_url }}">
+</head>
+
+<body>
+    <header>
+        <div class="titulo"><h1>Nicida Blog</h1></div>
+    </header>
+    <aside>
+        Propagandas<br><br><br>
+        <img src="{{ '/assets/images/tang.jpg' | relative_url }}"><br><br><br>
+        <img src="{{ '/assets/images/cocacola.jpg' | relative_url }}">
+    </aside>
+
+    <div class="container">
+        <div class="titulo2">
+            <h2>Confira os posts</h2>
+        </div>
+        {% for post in site.posts %}
+            <h3><a href="{{ post.url | relative_url }}">{{post.title}}</a></h3>
+        {% endfor %}
+    </div>
+    
+
+    <footer>
+        <a href="https://www.instagram.com/ricanicida/">Acesse meu instagram</a>
+    </footer>
+</body>
+</html>
