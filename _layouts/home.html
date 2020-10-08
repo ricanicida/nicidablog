@@ -21,6 +21,9 @@
         </div>
         {% for post in site.posts %}
             <h3><a href="{{ post.url | relative_url }}">{{post.title}}</a></h3>
+            <p><h4>{{ post.description }}</h4></p>
+            <p>Postado na categoria {{ post.categories }} por {{ post.author }}.</p>
+            
         {% endfor %}
     </div>
     
