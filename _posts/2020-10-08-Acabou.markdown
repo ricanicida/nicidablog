@@ -1,0 +1,16 @@
+---
+layout: post
+title: " Acabou "
+date: "08 de Outubro de 2020"
+author: "Ricardo Nicida Kazama"
+categories: "Comemoração"
+description: "Veja o gif de comemoração."
+---
+
+# Acabou o site!
+
+Finalizei código do site!
+
+
+<img src="{{ '/assets/images/acabou.gif' | relative_url }}"> <br><br><br>
+
